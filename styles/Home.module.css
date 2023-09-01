@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background: #000000;
+
 }
 
 .main {
@@ -12,6 +14,31 @@
   align-items: center;
 }
 
+
+
+.title, .titleAlt {
+  font-family: 'Masiku', sans-serif;
+  margin: 0;
+}
+
+.title {
+  color: #f4cb9b;
+}
+
+.titleAlt {
+  color: #ffffff;
+  font-size: 600%;
+}
+
+.claudia {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #000000;
+  justify-content: left;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -19,6 +46,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: #ffffff
 }
 
 .footer a {
@@ -51,19 +79,12 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #ffffff;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
 .grid {
   display: flex;
@@ -77,19 +98,20 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: #ffffff;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #3b3535;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #f4cb9b;
+  border-color: #f4cb9b;
 }
 
 .card h2 {
@@ -104,13 +126,25 @@
 }
 
 .logo {
-  height: 1em;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; /* Adjust the gap between grid items */
+}
+
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure images fill the entire grid cell */
+  padding: 8px; /* Add spacing around each image (optional) */
+}
+
+/* Style the images to maintain their aspect ratio */
+.image-item img {
+  width: 100%;
+  height: auto;
 }

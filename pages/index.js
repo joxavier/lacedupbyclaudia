@@ -2,7 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import { ApifyClient } from 'apify-client';
+
+import Feed from '../components/Feed';
+
+import imageData from '../data/claudia.json';
+
+
 export default function Home() {
+
+  const imageSources = [
+    '/hero-img/claudia.png',
+  ];
+
+  const randomImageSource = imageSources[Math.floor(Math.random() * imageSources.length)]
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,12 +27,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://www.instagram.com/lacedupbyclaudia/">LacedUpbyClaudia</a>
-        </h1>
+        <div className={styles.container}>
+            <h1 className={styles.title}>LacedUpby</h1>
+            <h1 class={styles.titleAlt}>Claudia</h1>
+        </div>
+
+
+
+
+
+        <div className={styles.center}>
+          <Image
+            className={styles.logo}
+            src={randomImageSource}
+            alt="Next.js Logo"
+            width={660}
+            height={627}
+            priority
+          />
+        </div>
 
         <p className={styles.description}>
-        𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃 
+          𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃
         </p>
 
         <div className={styles.grid}>
@@ -45,21 +76,22 @@ export default function Home() {
           >
             <h2>Learn &rarr;</h2>
             <p>
-              Hands on training. 
+              Hands on training.
             </p>
           </a>
         </div>
       </main>
 
+
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://metaparlour.io"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/metaparlour.svg" alt="Metaparlour Logo" width={160} height={80} />
           </span>
         </a>
       </footer>
