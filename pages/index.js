@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import { ApifyClient } from 'apify-client';
 
 import Feed from '../components/Feed';
 
@@ -91,7 +90,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/metaparlour.svg" alt="Metaparlour Logo" width={160} height={80} />
+            <Image src="/metaparlour.png" alt="Metaparlour Logo" width={240} height={160} />
           </span>
         </a>
       </footer>
