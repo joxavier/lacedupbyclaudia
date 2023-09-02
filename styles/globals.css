@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Masiku';
+  src: url('https://fonts.googleapis.com/css2?family=Masiku&display=swap') format('woff2'),
+  /* Add additional font formats if necessary */
+}
+
 html,
 body {
   padding: 0;
