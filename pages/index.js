@@ -4,9 +4,11 @@ import styles from '../styles/Home.module.css'
 
 
 import Feed from '../components/Feed';
+import Carousel from '../components/Products/Carousel';
 import Footer from '../components/Footer';
 
 import imageData from '../data/claudia.json';
+import productData from '../data/products.json';
 
 
 export default function Home() {
@@ -53,7 +55,7 @@ export default function Home() {
             <p>💰Deposit required.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="#Products" className={styles.card}>
             <h2>Products &rarr;</h2>
             <p>View top offerings</p>
           </a>
@@ -77,6 +79,10 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      <div className='products' id='Products'>
+      <Carousel products={productData} />
+    </div>
 
       <div className='socials' id='Socials' >
         <Feed imageData={imageData}/>
