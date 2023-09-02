@@ -1,0 +1,59 @@
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.title {
+    color: #f4cb9b;
+    font-size: 42px;
+    font-family: 'Masiku', sans-serif;
+    text-align: center;
+    text-shadow:
+        -3px -3px 0 #fff,
+        /* Top-left shadow (black) */
+        1px -1px 0 #fff,
+        /* Top-right shadow (black) */
+        -3px 3px 0 #fff,
+        /* Bottom-left shadow (black) */
+        1px 1px 0 #fff;
+    /* Bottom-right shadow (black) */
+}
+
+.productCard img {
+    width: 500px;
+}
+
+.productCard h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.productCard p {
+    color: #f4cb9b;
+    text-align: center;
+}
+
+.prevButton,
+.nextButton {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  margin: 30px;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
