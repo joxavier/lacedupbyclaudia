@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Masiku';
+  src: url('/fonts/masiku/Masiku.otf') format('otf'),
+  /* Add additional font formats if necessary */
+}
+
 html,
 body {
   padding: 0;
