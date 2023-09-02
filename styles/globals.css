@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Masiku';
   src: url('/fonts/masiku/Masiku.otf') format('otf'),
+      url('/fonts/masiku/Masiku.ttf') format('truetype');
+  font-display: swap;
+
   /* Add additional font formats if necessary */
 }
 
