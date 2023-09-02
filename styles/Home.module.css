@@ -23,6 +23,11 @@
   color: #f4cb9b;
   line-height: 1.15;
   font-size: 4rem;
+  text-shadow:
+    -6px -6px 0 #fff, /* Top-left shadow (black) */
+    1px -1px 0 #fff, /* Top-right shadow (black) */
+    -6px 6px 0 #fff, /* Bottom-left shadow (black) */
+    1px 1px 0 #fff; /* Bottom-right shadow (black) */
 }
 
 .titleAlt {
@@ -32,7 +37,6 @@
 
 .logo {
   margin: 1rem 0;
-  align-self: auto;
 }
 
 
