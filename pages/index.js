@@ -44,7 +44,7 @@ export default function Home() {
 
 
         <p className={styles.description}>
-          𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃
+          𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃 👑
         </p>
 
         <div className={styles.grid}>
@@ -55,15 +55,15 @@ export default function Home() {
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Products &rarr;</h2>
-            <p>View top-rated products</p>
+            <p>View top offerings</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="#Socials"
             className={styles.card}
           >
-            <h2>Styles &rarr;</h2>
-            <p>View past works.</p>
+            <h2>Socials &rarr;</h2>
+            <p>Connect & view past works.</p>
           </a>
 
           <a
@@ -78,7 +78,10 @@ export default function Home() {
         </div>
       </main>
 
-      <Feed imageData={imageData}/>
+      <div className='socials' id='Socials' >
+        <Feed imageData={imageData}/>
+      </div>
+      
 
       
       < Footer/>

@@ -1,15 +1,10 @@
-@font-face {
-  font-family: 'Masiku';
-  src: url('https://fonts.googleapis.com/css2?family=Masiku&display=swap') format('woff2'),
-  /* Add additional font formats if necessary */
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Masiku, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
