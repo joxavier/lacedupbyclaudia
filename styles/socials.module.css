@@ -1,0 +1,22 @@
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px; /* Adjust the gap between grid items */
+}
+
+.imageItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure images fill the entire grid cell */
+  padding: 8px; /* Add spacing around each image (optional) */
+}
+
+/* Style the images to maintain their aspect ratio */
+.imageItem img {
+  max-width: 100%; /* Ensure images fit within their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded edges to images */
+}

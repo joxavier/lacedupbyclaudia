@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 
 
 import Feed from '../components/Feed';
+import Footer from '../components/Footer';
 
 import imageData from '../data/claudia.json';
 
@@ -29,14 +30,7 @@ export default function Home() {
         <div className={styles.container}>
             <h1 className={styles.title}>LacedUpby</h1>
             <h1 class={styles.titleAlt}>Claudia</h1>
-        </div>
-
-
-
-
-
-        <div className={styles.center}>
-          <Image
+            <Image
             className={styles.logo}
             src={randomImageSource}
             alt="Next.js Logo"
@@ -45,6 +39,9 @@ export default function Home() {
             priority
           />
         </div>
+
+
+
 
         <p className={styles.description}>
           𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃
@@ -81,19 +78,12 @@ export default function Home() {
         </div>
       </main>
 
+      <Feed imageData={imageData}/>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://metaparlour.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/metaparlour.png" alt="Metaparlour Logo" width={240} height={160} />
-          </span>
-        </a>
-      </footer>
+      
+      < Footer/>
+
     </div>
+    
   )
 }

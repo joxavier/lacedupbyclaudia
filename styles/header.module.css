@@ -83,3 +83,43 @@
 }
 
 
+
+/* CSS for Feed component */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px; /* Adjust the gap between grid items */
+  max-width: 300px;
+}
+
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure images fill the entire grid cell */
+  padding: 8px; /* Add spacing around each image (optional) */
+}
+
+/* Style the images to maintain their aspect ratio */
+.image-item img {
+  max-width: 100%; /* Ensure images fit within their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
