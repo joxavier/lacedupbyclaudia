@@ -49,7 +49,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="https://booksy.com/en-ca/5272_ace-cutz-studio_barbers_870806_mississauga/staffer/27687#ba_s=dl_1" className={styles.card}>
             <h2>Book &rarr;</h2>
-            <p>💰Deposit required.</p>
+            <p>💰Deposit required</p>
           </a>
 
           <a href="#Styles" className={styles.card}>
@@ -62,7 +62,7 @@ export default function Home() {
             className={styles.card}
           >
             <h2>Feed &rarr;</h2>
-            <p>View past works.</p>
+            <p>View past works</p>
           </a>
 
           <a
@@ -71,7 +71,7 @@ export default function Home() {
           >
             <h2>Learn &rarr;</h2>
             <p>
-              Hands on training.
+              Hands on training
             </p>
           </a>
         </div>
