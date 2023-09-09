@@ -6,7 +6,7 @@ import Feed from '../components/Feed';
 import Carousel from '../components/Products/Carousel';
 import Footer from '../components/Footer';
 
-import imageData from '../data/claudia.json';
+import imageData from '../data/claudia1.json';
 import productData from '../data/products.json';
 
 
@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>LacedUpbyClaudia</title>
-        <meta name="description" content="𝒴𝑜𝓊𝓇 𝒽𝒶𝒾𝓇 𝒾𝓈 𝓎𝑜𝓊𝓇 𝒸𝓇𝑜𝓌𝓃 👑" />
+        <meta name="description" content="lacedupbyclaudia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
