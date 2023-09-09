@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react';
 import styles from '../styles/Home.module.css'
 
 import Feed from '../components/Feed';
@@ -10,6 +11,8 @@ import imageData from '../data/claudia1.json';
 import productData from '../data/products.json';
 
 
+
+
 export default function Home() {
 
   const imageSources = [
@@ -17,6 +20,19 @@ export default function Home() {
   ];
 
   const randomImageSource = imageSources[Math.floor(Math.random() * imageSources.length)]
+
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+
+  const openPopup = () => {
+    setPopupVisible(true);
+  };
+
+  const closePopup = () => {
+    setPopupVisible(false);
+  };
+
+
 
 
   return (
@@ -29,7 +45,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.container}>
-            <Image
+          <Image
             className={styles.logo}
             src={randomImageSource}
             alt="Next.js Logo"
@@ -65,31 +81,45 @@ export default function Home() {
             <p>View past works</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Learn &rarr;</h2>
-            <p>
-              Hands on training
-            </p>
-          </a>
+            <div className={styles.container}>
+                <button className={styles.card} onClick={openPopup}>
+                  <h2>Learn &rarr;</h2>
+                  <p>Hands-on training</p>
+                </button>
+                {isPopupVisible && (
+                  <div className={styles.popup}>
+                    <span className={styles.close} onClick={closePopup}>
+                      &times;
+                    </span>
+                    <h2>Coming Soon</h2>
+                    <p>Sign up to get notified when this feature is available:</p>
+                    <form className={styles.popupContents}>
+                      <label>
+                        Email:
+                        <input type="email" placeholder="Your email" />
+                      </label>
+                      <button type="submit">Sign Up</button>
+                    </form>
+                  </div>
+                )}
+            </div>
         </div>
       </main>
 
       <div className='styles' id='Styles'>
-      <Carousel products={productData} />
-    </div>
+        <Carousel products={productData} />
+      </div>
 
       <div className='feed' id='Feed' >
-        <Feed imageData={imageData}/>
+        <Feed imageData={imageData} />
       </div>
-      
 
-      
-      < Footer/>
+
+
+      < Footer />
 
     </div>
-    
+
   )
 }
+
