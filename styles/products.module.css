@@ -22,8 +22,14 @@
     /* Bottom-right shadow (black) */
 }
 
+.title img {
+  align-items: center;
+  width: 40%;
+  height: auto;
+}
+
 .productCard img {
-    width: 500px;
+    width: 480px;
 }
 
 .productCard h3 {

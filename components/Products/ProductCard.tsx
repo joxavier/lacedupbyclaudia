@@ -8,7 +8,6 @@ const ProductCard = ({ image, name, price }) => {
     <div className={styles.productCard}>
       <img src={image} alt={name} />
       <h3>{name}</h3>
-      <p>${price}</p>
     </div>
   );
 };

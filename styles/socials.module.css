@@ -1,21 +1,16 @@
 .socialsContainer {
   /* Add styles for the section with title */
   margin-top: 20px;
+  text-align: center;
   /* Add other styles as needed */
 }
 
-.title {
-  color: #f4cb9b;
-  font-size: 42px;
-  font-family: 'Masiku', sans-serif;
-  text-align: center;
-  text-shadow:
-  -3px -3px 0 #fff, /* Top-left shadow (black) */
-  1px -1px 0 #fff, /* Top-right shadow (black) */
-  -3px 3px 0 #fff, /* Bottom-left shadow (black) */
-  1px 1px 0 #fff; /* Bottom-right shadow (black) */
-}
 
+.title img {
+  align-items: center;
+  width: 40%;
+  height: auto;
+}
 
 .imageGrid {
   display: grid;

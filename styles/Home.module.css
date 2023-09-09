@@ -1,7 +1,7 @@
 .container {
   padding: 0 2rem;
   background: #000000;
-  width:fit-content;
+
 }
 
 .main {
@@ -15,7 +15,7 @@
 
 
 .title, .titleAlt {
-  font-family: 'myfont', 'Masiku', sans-serif;
+  font-family: 'Masiku', sans-serif;
   margin: 0;
 }
 
@@ -37,6 +37,8 @@
 
 .logo {
   margin: 1rem 0;
+  width: 50%;
+  height: auto;
 }
 
 

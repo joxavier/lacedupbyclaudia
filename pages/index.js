@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-
 import Feed from '../components/Feed';
 import Carousel from '../components/Products/Carousel';
 import Footer from '../components/Footer';
@@ -14,7 +13,7 @@ import productData from '../data/products.json';
 export default function Home() {
 
   const imageSources = [
-    '/hero-img/claudia.png',
+    '/claudiaLogo1.png',
   ];
 
   const randomImageSource = imageSources[Math.floor(Math.random() * imageSources.length)]
@@ -30,14 +29,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.container}>
-            <h1 className={styles.title}>LacedUpby</h1>
-            <h1 class={styles.titleAlt}>Claudia</h1>
             <Image
             className={styles.logo}
             src={randomImageSource}
             alt="Next.js Logo"
-            width={660}
-            height={627}
+            width={754}
+            height={1203}
             priority
           />
         </div>
@@ -55,17 +52,17 @@ export default function Home() {
             <p>💰Deposit required.</p>
           </a>
 
-          <a href="#Products" className={styles.card}>
-            <h2>Products &rarr;</h2>
+          <a href="#Styles" className={styles.card}>
+            <h2>Styles &rarr;</h2>
             <p>View top offerings</p>
           </a>
 
           <a
-            href="#Socials"
+            href="#Feed"
             className={styles.card}
           >
-            <h2>Socials &rarr;</h2>
-            <p>Connect & view past works.</p>
+            <h2>Feed &rarr;</h2>
+            <p>View past works.</p>
           </a>
 
           <a
@@ -80,11 +77,11 @@ export default function Home() {
         </div>
       </main>
 
-      <div className='products' id='Products'>
+      <div className='styles' id='Styles'>
       <Carousel products={productData} />
     </div>
 
-      <div className='socials' id='Socials' >
+      <div className='feed' id='Feed' >
         <Feed imageData={imageData}/>
       </div>
       
