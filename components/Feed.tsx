@@ -6,6 +6,10 @@ import styles from '../styles/socials.module.css'
 
 export default function Feed({ imageData }) {
 
+  const sortedImageData = [...imageData].sort((a, b) => {
+    return new Date(b.timestamp) - new Date(a.timestamp);
+  });
+
   return (
     <div className={styles.socialsContainer}>
 
@@ -19,7 +23,7 @@ export default function Feed({ imageData }) {
       </div>
     <div className={styles.imageGrid}>
       
-      {imageData.map((item, index) => (
+      {sortedImageData.map((item, index) => (
         <div key={index} className={styles.imageItem}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
             <img src={`/api/getImage?url=${encodeURIComponent(item.displayUrl)}`}
