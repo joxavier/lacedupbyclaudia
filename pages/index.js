@@ -7,7 +7,7 @@ import Feed from '../components/Feed';
 import Carousel from '../components/Products/Carousel';
 import Footer from '../components/Footer';
 
-import imageData from '../data/claudia1.json';
+import imageData from '../data/claudia2.json';
 import productData from '../data/products.json';
 
 
