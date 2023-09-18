@@ -23,14 +23,23 @@ export default function Feed({ imageData }) {
       </div>
     <div className={styles.imageGrid}>
       
-      {sortedImageData.map((item, index) => (
-        <div key={index} className={styles.imageItem}>
-          <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <img src={`/api/getImage?url=${encodeURIComponent(item.displayUrl)}`}
-                 alt={`Image ${index + 1}`} />
-          </a>
-        </div>
-      ))}
+    {sortedImageData.map((item, index) => (
+  <div key={index} className={styles.imageItem}>
+    {item.url ? (
+      <a href={item.url} target="_blank" rel="noopener noreferrer">
+        <img
+          src={`/api/getImage?url=${encodeURIComponent(item.displayUrl)}`}
+          alt={`Image ${index + 1}`}
+        />
+      </a>
+    ) : (
+      <div className={styles.reviewTextBox}>
+        <p>{item.review}</p>
+        <p>{`~${item.reviewer}`}</p>
+      </div>
+    )}
+  </div>
+))}
     </div>
 
 
