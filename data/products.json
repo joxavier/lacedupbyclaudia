@@ -1,18 +1,24 @@
 [
     {
+      "productId": 0,
       "image": "/products/braidBeardFade.png",
       "name": "Fade, Beard & Braid",
-      "price": 150
+      "price": 150,
+      "associatedTags": ["FadeBeardBraid"]
     },
     {
+      "productId": 1,
       "image": "/products/2strwExt.png",
       "name": "2 Straight Back with Extensions",
-      "price": 70
+      "price": 70,
+      "associatedTags": ["2StraightBackw/Extensions"]
     },
     {
+      "productId": 2,
       "image": "/products/6back.png",
       "name": "6 Straight Back",
-      "price": 80
+      "price": 80,
+      "associatedTags": ["6StraightBack"]
     }
   ]
   

@@ -48,7 +48,7 @@ export default function Home() {
           <Image
             className={styles.logo}
             src={randomImageSource}
-            alt="Next.js Logo"
+            alt="Laced Up by Claudia Logo"
             width={754}
             height={1203}
             priority
