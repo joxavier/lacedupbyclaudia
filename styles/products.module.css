@@ -52,7 +52,8 @@
 }
 
 .productCard img {
-  width: 70%; /* Adjust as needed */
+  width: 600px; /* Adjust as needed */
+  min-width: 300px;
   height: auto; /* Maintain aspect ratio */
 }
 

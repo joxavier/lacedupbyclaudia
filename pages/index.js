@@ -81,28 +81,28 @@ export default function Home() {
             <p>View past works</p>
           </a>
 
-            <div className={styles.container}>
-                <button className={styles.card} onClick={openPopup}>
-                  <h2>Learn &rarr;</h2>
-                  <p>Hands-on training</p>
-                </button>
-                {isPopupVisible && (
-                  <div className={styles.popup}>
-                    <span className={styles.close} onClick={closePopup}>
-                      &times;
-                    </span>
-                    <h2>Coming Soon</h2>
-                    <p>Sign up to get notified when this feature is available:</p>
-                    <form className={styles.popupContents}>
-                      <label>
-                        Email:
-                        <input type="email" placeholder="Your email" />
-                      </label>
-                      <button type="submit">Sign Up</button>
-                    </form>
-                  </div>
-                )}
-            </div>
+          <div>
+              <button className={styles.card} onClick={openPopup}>
+                <h2>Learn &rarr;</h2>
+                <p>Hands-on training</p>
+              </button>
+              {isPopupVisible && (
+                <div className={styles.popup}>
+                  <span className={styles.close} onClick={closePopup}>
+                    &times;
+                  </span>
+                  <h2>Coming Soon</h2>
+                  <p>Sign up to get notified when this feature is available:</p>
+                  <form className={styles.popupContents}>
+                    <label>
+                      Email:
+                      <input type="email" placeholder="Your email" />
+                    </label>
+                    <button type="submit">Sign Up</button>
+                  </form>
+                </div>
+              )}
+          </div>
         </div>
       </main>
 
