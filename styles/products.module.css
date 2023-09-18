@@ -1,7 +1,18 @@
 .container {
-  padding: 0 2rem;
   background: #000000;
   min-width: fit-content;
+  align-items: center;
+  padding: 4rem 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.container h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.container button {
 
 }
 
@@ -95,4 +106,91 @@
   background-color: #f4cb9b;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   color: #fff; /* Change text color on hover */
+}
+
+.productDisplay {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  border-color: #f4cb9b;
+  background: rgba(244, 203, 155, 0.1);
+  padding: 2rem;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .productDisplay {
+    /* Change the flex direction to column for smaller screens */
+    flex-direction: column;
+  }
+}
+
+.productDisplay img {
+  max-width: 80% ;
+  transition: transform 0.2s ease-in-out;
+}
+
+.productDisplay img:hover {
+  /* Apply a scale transformation on hover */
+  transform: scale(1.05);
+}
+
+.productDetails h1 {
+  text-align: left;
+}
+
+.productDetails h2 {
+  position: relative;
+  color: black; /* Text color */
+  font-weight: lighter;
+  top: -5px;
+  padding: 5px 20px; /* Adjust padding as needed (top and bottom padding reduced) */
+  background-color: #f4cb9b; /* Rectangle color */
+  border-radius: 10px; /* Adjust the radius for rounded corners */
+  max-width: fit-content;  
+}
+
+.productDetails p {
+  color: lightgrey;
+  text-align: left;
+}
+
+
+.bookButton {
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f4cb9b; /* Change to your desired button background color */
+  color: #fff; /* Change to your desired button text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: xx-large;
+  font-weight:bolder;
+  font-family:'Courier New', Courier, monospace;
+  
+}
+
+.bookButton:hover {
+  background-color: #f4cb9b;; /* Change to your desired hover background color */
+  color: #000; /* Change to your desired hover text color */
+}
+
+
+.productReviews {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  border-color: #f4cb9b;
+  background: rgba(244, 203, 155, 0.1);
+  padding: 2rem;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  justify-content: space-evenly;
 }
